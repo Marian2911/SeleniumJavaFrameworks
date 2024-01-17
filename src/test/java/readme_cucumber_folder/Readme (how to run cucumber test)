@@ -1,0 +1,26 @@
+
+
+                                       Readme (how to run cucumber test)
+
+
+          
+              
+.......................... Ordinea de apelare a intregului mecanizm pentru efectuarea unui test in "Cucumber" ...............................
+              
+              1. fisierul "testng.xml" apeleaza clasa "Runner".
+              2. clasa "Runner" apeleaza clasa "Feature".
+              3. clasa "Feature" apeleaza clasa "Step Definitions".
+              
+      
+              Exemplu real :
+              "testng.xml"   >>>>>>>>   "Runner.class"   >>>>>>>>  "Login.feature"    >>>>>>>>>>    "Login.java"
+              
+..............................................................................................................................................              
+              
+              
+              
+              
+              
+              
+              
+              

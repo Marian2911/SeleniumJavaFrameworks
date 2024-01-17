@@ -1,0 +1,54 @@
+
+
+                                        Run cucumber using Command Prompt
+
+
+    
+  
+  Note : - 1. Pentru a rula teste (using "cucumber" and "testng") folosind comanda Maven "mvn test", 
+              trebuie sa includem fisierul ".xml" (in exemplu nostru "testng_Cucumber.xml") in pluginul maven surefire din fisierul de configurare "pom.xml".
+         - 2. deschidem "command prompt" , navigam pana la locatia proiectului (unde avem testele) si rulam folosind comanda "mvn test".
+         
+      
+
+........................................... "plugin" (maven surefire) pentru fisierul de configurare "pom.xml" ...............................................................................          
+             
+      <build>
+		  <pluginManagement>
+             
+				<!-- Testng maven integration (plugin pentru a functiona proiectul maven si din command prompt; de fapt specificam si calea catre fisierul "testng.xml")   (New)      OK  -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<version>3.2.3</version>
+					<configuration>
+						<suiteXmlFiles>
+					        <suiteXmlFile>testng_Cucumber.xml</suiteXmlFile>        <!-- numele fisierului cu extensia ".xml" care va rula atunci cand folosind comenzile "Maven" din "Command Prompt" -->
+						</suiteXmlFiles>
+					</configuration>
+				</plugin>
+				
+		  <pluginManagement>		
+	  <build>
+	        
+............................................................................................................................................
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

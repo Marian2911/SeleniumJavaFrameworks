@@ -1,0 +1,85 @@
+
+
+                                 "Ghid de bune practici" pentru o mai buna functionare/rulare a proiectului :
+			
+			
+						  
+
+	     1. "Refresh Project"                  = click dreapta pe proiect       >>>>>>>>   Refresh  (sau tasta "F5").
+		 2. "Update Project"                   = click dreapta pe proiect       >>>>>>>>   Maven   >>>>>>>>   Update Project....
+		 3. "delete Run Configurations file"   = eclipse navigation bar menu    >>>>>>>>   Run     >>>>>>>>   Run Configurations...    >>>>>>>  delete "Run Configurations file" from all you want.
+		 4. "Maven clean"                      = click dreapta pe proiect       >>>>>>>>   Run As  >>>>>>>>   Maven clean  .....apoi....  Maven test. 
+		 
+		 
+
+
+
+
+
+		 
+...................................   "BUILD FAILURE" (4. "Maven clean")   ...................
+		 
+		 Note : - Daca ne da "BUILD FAILURE" dupa "Maven clean" si apoi "Maven test" , vezi "TestNG dependency" din fisierul "pom.xml".
+		 
+........ Variant 1
+
+         1. Open pom.xml file.
+         2. Go to "Dependencies" tab.
+         3. Go to "dependency" of "testng".
+	     4. change from the "Scope" tag, "test" to "compile" and click "OK" to save it.
+	     5. Try to build your project again with "compile test" goals.
+		 
+		 
+        <!-- testng  (New)      OK   -->
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>7.8.0</version>
+			<scope>test</scope>
+		</dependency>
+		
+		<!-- testng  (New)      OK   -->
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>7.8.0</version>
+			<scope>compile</scope>
+		</dependency>
+		
+		
+........ Variant 2
+
+         1. Open pom.xml file.
+         2. Go to "Dependencies" tab.
+         3. Go to "dependency" of "testng".
+	     4. Remove the "scope" tag line and click "OK" to save it.
+	     5. Try to build your project again with "compile test" goals.
+		
+		 
+        <!-- testng  (New)      OK   -->
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>7.8.0</version>
+		 ** <scope>test</scope> ** //Remove this line and compile maven
+		</dependency>
+		
+ 
+  Note : - Chiar dacă am importat dependența Maven pentru Testng, atunci când adăugați eticheta scope în fișierul XML, 
+           aceasta este tratată ca adnotare JUnit și nu ca Testng. 
+           Deci, dupa ce am eliminat eticheta scope, Adnotarea "@Test" este tratată ca Testng Annotation.			
+........................................................................................................................
+
+
+
+
+
+
+
+
+
+
+
+
+
+

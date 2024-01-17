@@ -1,0 +1,33 @@
+
+
+                                                log4j2
+
+
+
+
+NOTE : - "filtering" de pus in fisierul "pom.xml" pentru a lua in considerare fisierul "log4j2.xml".
+         fisierul "log4j2.xml" = fisier de configurare pentru mesajele de informare de tip "log4j2").
+       - calea pentru a vizualiza fisierul cu log-urile (se gaseste in folderul "logs" din radacina proiectului)   
+          
+          
+
+.......................................... "filtering" de pus in fisierul "pom.xml" ..........................
+
+  <build>
+
+    <resources>
+    
+      <resource>
+        <directory>src/main/resources-filtered</directory>
+        <filtering>true</filtering>
+      </resource>
+      
+    </resources>
+
+  </build>
+
+..........................................................................................................................
+
+
+
+

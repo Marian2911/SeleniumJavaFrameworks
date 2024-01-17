@@ -1,0 +1,49 @@
+
+
+                                         Integrating Cucumber BDD
+
+
+    
+  
+.......................................... Integrating Cucumber BDD into this Framework ..........................        
+
+    1. Add the dependencies for Cucumber
+         - Cucumber-Java 
+         - Cucumber-testng
+    2. Verify whether the Cucumber Eclipse IDE plugin is installed
+    3. Create a package say 'features' under 'src/test/java'
+    4. Create a feature file say 'Login.feature' under this package
+    5. Create a package say 'stepdefinitions' under 'src/test/java'
+    6. Create a Class say 'Login.java' under this package
+    7. Auto-generate the Step definitions using TinyGerkhin Chrome Plugin
+    8. Move the automation code to respective step definitions methods
+    9. Create a runner package 
+    10. Create a Runner class under it
+         - Extend AbstractTestNGCucumberTests
+    11. Generate a testng2.xml file and modify like this
+    12. Run the testng2.xml file
+    13. Mention this testng2.xml file in maven surefire plugin of pom.xml and run using the Maven command (mvn test)
+
+........................................... "dependencies" for Cucumber ...............................................................................          
+             
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>7.15.0</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-testng</artifactId>
+            <version>7.15.0</version>
+        </dependency>   
+              
+............................................................................................................................................
+
+
+
+..........................................................................................................................
+
+
+
+

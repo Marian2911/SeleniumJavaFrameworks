@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<listeners>
+		<listener class-name="listeners.Listeners" />      <!-- calea catre clasa "Listeners" -->
+	</listeners>
+
+	<test thread-count="5" name="Tests">
+		<classes>
+	   <!-- <class name="tests_group_2.FourTest" /> -->
+	        <class name="tests_group_2.ThreeTest" />
+			<class name="tests_group_2.TwoTest" />
+       <!-- <class name="tests_group_1.LoginTest" /> -->
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

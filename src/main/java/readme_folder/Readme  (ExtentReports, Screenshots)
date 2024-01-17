@@ -1,0 +1,29 @@
+
+
+                                                 ExtentReports si Screenshots
+
+
+  
+              
+ IMPORTANT !!! +
+ 
+ NOTE : - Pentru a avea rapoarte si screenshot-uri("ExtentReports" si "Screenshots") intru-un test, trebuie adaugat in fisierul "testng.xml" si clasa "Listeners".
+          
+   
+
+          
+          
+          
+  
+
+ .................................. adaugarea in fisierul "testng.xml" a clasa "Listeners" ....................................................      
+          
+   <listeners>
+     <listener class-name="listeners.Listeners"/>                    <!-- calea catre clasa "Listeners" -->
+  </listeners>          
+                   
+.................................................................................................................................................
+
+
+
+

@@ -1,0 +1,29 @@
+
+
+                                       Screenshots and Listeners.class
+
+
+
+
+  NOTE : - Intre "screenshots" si "Listeners" este o relatie stransa.
+           "Screenshot-ul" se face numai atunci cand testul esueaza.
+         - calea pentru a vizualiza "Screenshot-urile" (se gaseste in folderul "screenshots" din radacina proiectului) 
+
+
+......................................... Taking screenshots for failing Tests: ....................................................
+
+    1. Create a listeners package under "src/main/java".
+    2. Create a Listeners class under it and make it implement ITestListener interface (import: "import org.testng.ITestListener;").
+        Add TestNG library if unable to resolve the errors.
+    3. Select 'Source' menu in Eclipse IDE < Override/Implement Methods and select all the check boxes of ITestListerner.
+    4. Create reusable method for taking screenshots in Base class with two parameters.
+    5. Extend the Listeners class with Base class .
+    6. Update the onTestFailure() method of Listeners class .
+    7. Add the Listeners tags in testng.xml file.
+    8. Make the driver of the Test Classes to global and public !!!! ( adica : "public WebDriver driver;" ).
+    9. Intentionally fail a test and run the testng.xml file.
+
+....................................................................................................................................
+
+
+
