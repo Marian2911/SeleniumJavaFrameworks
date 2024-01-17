@@ -25,6 +25,13 @@ public class FourTest extends Base  {
 	// METODE PENTRU TESTARE
 	@Test
 	public void testFour() throws IOException, InterruptedException {
+		
+		
+		
+		System.out.println(" update Git HUB !!!. ");
+		
+		
+		
 		System.out.println("TestFour");
 		
 		driver = initializeDriver();                                 // accesam fisierul "data.properties" pentru a initializa driverul.
