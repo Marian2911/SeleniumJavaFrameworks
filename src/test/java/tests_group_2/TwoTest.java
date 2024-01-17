@@ -26,6 +26,11 @@ public class TwoTest extends Base {
 	// METODE PENTRU TESTARE
 	@Test
 	public void testTwo() throws IOException, InterruptedException {
+
+
+		System.out.println(" update from Git HUB !!!. ");
+		
+		
 		System.out.println("TestTwo");
 		
 		driver = initializeDriver();                                  // accesam fisierul "data.properties" pentru a initializa driverul.
